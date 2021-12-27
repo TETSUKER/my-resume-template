@@ -1,0 +1,44 @@
+.Home {
+
+    .Home-name {
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 85px;
+        line-height: 104px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 200px;
+    }
+
+    .Home-info {
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 44px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 30px;
+    }
+
+    .Home-download {
+        font-family: 'Century Gothic';
+        font-size: 35px;
+        line-height: 51px;
+        width: 400px;
+        height: 100px;
+        left: 120px;
+        top: 756px;
+        background: #003F9A;
+        box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 73px;
+        margin-top: 100px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+
+    .Home-download:hover {
+        background: #0045a7;
+        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25);
+    }
+}
