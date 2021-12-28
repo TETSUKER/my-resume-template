@@ -1,4 +1,5 @@
 .Home {
+    padding: 0 120px;
 
     .Home-name {
         font-family: 'Century Gothic';
@@ -7,7 +8,7 @@
         font-size: 85px;
         line-height: 104px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-top: 200px;
+        margin-top: 430px;
     }
 
     .Home-info {
@@ -20,14 +21,17 @@
         margin-top: 30px;
     }
 
-    .Home-download {
+    a {
+        text-decoration: none;
+    }
+
+    Button {
         font-family: 'Century Gothic';
-        font-size: 35px;
+        font-size: 30px;
         line-height: 51px;
+        text-transform: none;
         width: 400px;
         height: 100px;
-        left: 120px;
-        top: 756px;
         background: #003F9A;
         box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
         border-radius: 73px;
@@ -37,7 +41,7 @@
         transition-duration: 0.4s;
     }
 
-    .Home-download:hover {
+    Button:hover {
         background: #0045a7;
         box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25);
     }

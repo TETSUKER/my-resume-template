@@ -38,7 +38,11 @@ body {
 }
 
 .App {
-    padding: 50px 120px 250px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 0;
 }
 
 .title {

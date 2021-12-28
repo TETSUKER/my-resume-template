@@ -1,0 +1,44 @@
+.Contacts {
+    margin: 100px 0;
+    padding: 0 120px;
+
+    .Contacts-block {
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 200px 0 200px;
+
+        .Contacts__icon {
+            max-width: 88px;
+            margin: 10px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+
+        .Contacts__icon:hover {
+            transform: scale(1.1); 
+        }
+
+        .Contacts__text {
+            font-family: 'Century Gothic';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 49px;
+            margin-left: 30px;
+            padding-bottom: 10px;
+        }
+
+        .Contacts-block__left-contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .Contacts-block__right {
+            max-width: 250px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

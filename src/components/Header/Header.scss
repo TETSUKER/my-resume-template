@@ -1,67 +1,70 @@
 .Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .Toolbar {
+        display: flex;
+        justify-content: space-between;
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 75px;
-    color: #468FEA;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
-.nav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-        display: table-cell;
-        position: relative;
-    }
-
-    a {
-        font-family: 'Century Gothic';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 44px;
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.15em;
-        display: inline-block;
-        padding: 0px 25px;
-        position: relative;
-        text-shadow: 2px 2px 2px rgb(77, 77, 77);
-    }
-
-    a:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: #fff;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-
-    a:hover:after {
-        width: 70%;
-        left: 14%;
-        box-shadow: 2px 2px 2px rgb(77, 77, 77);
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 75px;
+            color: #468FEA;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 10px 100px;
+        }
+        
+        .nav {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        
+            li {
+                display: table-cell;
+                position: relative;
+            }
+        
+            .Link {
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 25px;
+                line-height: 44px;
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0.15em;
+                display: inline-block;
+                padding: 0px 25px;
+                position: relative;
+                text-shadow: 1px 1px 2px rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        
+            .Link:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: #fff;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+        
+            .Link:hover:after {
+                width: 70%;
+                left: 14%;
+                box-shadow: 1px 1px 2px rgb(0, 0, 0);
+            }
+        }
     }
 }

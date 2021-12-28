@@ -1,0 +1,29 @@
+.SkillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    min-width: 350px;
+    max-height: 470px;
+    background: rgba(12, 62, 131, 0.75);
+    border-radius: 52px;
+    padding: 60px 50px 40px 50px;
+    flex: 1 0 21%; /* explanation below */
+    margin: 20px;
+
+    .SkillCard__image {
+        max-width: 265px;
+        margin-bottom: 40px;
+    }
+
+    .SkillCard__title {
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        /* identical to box height */
+        text-align: center;
+    }
+}
