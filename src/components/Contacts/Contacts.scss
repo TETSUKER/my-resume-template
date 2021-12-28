@@ -1,11 +1,11 @@
 .Contacts {
     margin: 100px 0;
-    padding: 0 120px;
+    padding: 0 120px 100px 120px;
 
     .Contacts-block {
         display: flex;
         justify-content: space-between;
-        margin: 100px 200px 0 200px;
+        margin-top: 100px;
 
         .Contacts__icon {
             max-width: 88px;
@@ -20,11 +20,6 @@
         }
 
         .Contacts__text {
-            font-family: 'Century Gothic';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 40px;
-            line-height: 49px;
             margin-left: 30px;
             padding-bottom: 10px;
         }

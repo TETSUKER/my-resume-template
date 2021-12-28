@@ -14,11 +14,7 @@
 
         .left-block__title {
             margin-top: 45px;
-            font-family: 'Century Gothic';
-            font-style: normal;
-            font-weight: bold;
             font-size: 40px;
-            line-height: 49px;
             white-space: nowrap;
         }
     }
@@ -31,20 +27,11 @@
         margin-left: 80px;
 
         .right-block__title {
-            font-family: 'Century Gothic';
-            font-style: normal;
-            font-weight: bold;
             font-size: 38px;
-            line-height: 47px;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
+    }
 
-        .right-block__text {
-            font-family: 'Century Gothic';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 38px;
-            line-height: 47px;
-        }
+    .title-text {
+        text-align: start;
     }
 }

@@ -3,17 +3,17 @@ import './About.scss';
 
 const About = () => {
     return (
-        <div className="About">
-            <div className="title">Обо мне</div>
-            <div className="bio">
-                <div className="bio__photo-block">
-                    <img src={require('../../assets/images/avatar.jpg')} className='photo' alt="avatar" />
-                    <div className="bio__photo-block__bottom">
-                        <div className="name">Имя: Токмин Роман</div>
-                        <div className="birthday">Дата рождения: 22.01.1999</div>
+        <div className='About'>
+            <div className='title-text'>Обо мне</div>
+            <div className='About__bio'>
+                <div className='card About__bio-photo-block'>
+                    <img src={require('../../assets/images/avatar.jpg')} className='photo' alt='avatar' />
+                    <div className='About__bio-photo-block__bottom'>
+                        <div className='name'>Имя: Токмин Роман</div>
+                        <div className='birthday'>Дата рождения: 22.01.1999</div>
                     </div>
                 </div>
-                <div className="bio__info-block">
+                <div className='minor-text'>
                     Я начинающий веб-разработчик, 
                     в настоящее время работаю в Eltex, 
                     где разрабатываю интерфейс для сетевого оборудования, а также помогаю ему 

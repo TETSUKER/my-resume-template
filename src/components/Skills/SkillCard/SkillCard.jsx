@@ -3,9 +3,9 @@ import './SkillCard.scss';
 
 const SkillCard = (data) => {
     return (
-        <div className="SkillCard">
+        <div className='card SkillCard'>
             <img src={require (`../../../assets/images/${data.data.image}`)} className='SkillCard__image' />
-            <div className="SkillCard__title">{data.data.title}</div>
+            <div className='title-text'>{data.data.title}</div>
         </div>
     )
 }

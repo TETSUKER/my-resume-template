@@ -4,9 +4,9 @@ import SkillCard from './SkillCard/SkillCard';
 
 const Skills = () => {
     return (
-        <div className="Skills">
-            <div className="title">Навыки</div>
-            <div className="SkillCards">
+        <div className='Skills'>
+            <div className='title-text'>Навыки</div>
+            <div className='SkillCards'>
                 <SkillCard data={{
                     image: 'html5.png',
                     title: 'HTML5'

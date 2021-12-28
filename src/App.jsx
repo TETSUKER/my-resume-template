@@ -9,7 +9,7 @@ import Contacts from './components/Contacts/Contacts';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Home id='Home'/>
       <About id='About'/>

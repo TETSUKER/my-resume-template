@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import { Link } from "react-scroll";
-
-const ScrollLink = Link.ScrollLink
+import { Link } from 'react-scroll';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -28,71 +26,73 @@ ElevationScroll.propTypes = {
 
 const Header = (props) => {
     return (
-        <div className="Header">
+        
             <ElevationScroll {...props}>
                 <AppBar>
-                    <Toolbar className='Toolbar'>
-                        <div className="logo">&#60;/&#62;</div>
-                        <ul className="nav">
-                            <li>
-                                <Link
-                                    to="Home"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    className='Link'>
-                                    Главная
-                                </Link>
-                            </li>
-                            <li>
-                                <Link 
-                                    to="About"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-150}
-                                    className='Link'>
-                                    Обо мне
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="Resume"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-150}
-                                    className='Link'>
-                                    Резюме
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="Skills"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-150}
-                                    className='Link'>
-                                    Навыки
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="Contacts"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-150}
-                                    className='Link'>
-                                    Контакты
-                                </Link>
-                            </li>
-                        </ul>
+                    <Toolbar>
+                        <div className='Header'>
+                            <div className='Header__logo'>&#60;/&#62;</div>
+                            <ul className='Header__nav'>
+                                <li>
+                                    <Link
+                                        to='Home'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-250}
+                                        className='Link'>
+                                        Главная
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link 
+                                        to='About'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-150}
+                                        className='Link'>
+                                        Обо мне
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to='Resume'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-150}
+                                        className='Link'>
+                                        Резюме
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to='Skills'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-120}
+                                        className='Link'>
+                                        Навыки
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to='Contacts'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-150}
+                                        className='Link'>
+                                        Контакты
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>
-        </div>
     )
 };
 
