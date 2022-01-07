@@ -1,11 +1,14 @@
+@import '../../variables';
+
 .Contacts {
-    margin: 100px 0;
-    padding: 0 120px 100px 120px;
+    margin: 60px 0;
+    padding-bottom: 60px;
 
     .Contacts-block {
         display: flex;
-        justify-content: space-between;
-        margin-top: 100px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 50px;
 
         .Contacts__icon {
             max-width: 88px;
@@ -20,7 +23,7 @@
         }
 
         .Contacts__text {
-            margin-left: 30px;
+            margin-left: 10px;
             padding-bottom: 10px;
         }
 
@@ -30,10 +33,20 @@
         }
 
         .Contacts-block__right {
-            max-width: 250px;
+            max-width: 216px;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (min-width : $mobile-min) and (max-width : $mobile-max) {
+        .Contacts-block {
+            justify-content: center;
+        }
+
+        .Contacts__text {
+            display: none;
         }
     }
 }

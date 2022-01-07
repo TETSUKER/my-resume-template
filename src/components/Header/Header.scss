@@ -1,3 +1,42 @@
+@import '../../variables';
+
+.MuiPaper-root {
+    background-color: #3f51b5;
+}
+
+.Link {
+    display: inline-block;
+    font-family: 'Century Gothic';
+    font-size: 22px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 0px 25px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.Link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.Link:hover:after {
+    width: 70%;
+    left: 14%;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
 .Header {
     width: 100%;
     display: flex;
@@ -8,52 +47,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 45px;
+        height: 45px;
         font-family: Roboto;
         font-weight: bold;
-        font-size: 45px;
+        font-size: 25px;
         color: #468FEA;
         background-color: #fff;
         border-radius: 50%;
-        margin: 10px 100px;
+        margin: 10px 0;
     }
 
     .Header__nav {
         display: flex;
         list-style-type: none;
-    
-        .Link {
-            display: inline-block;
-            font-family: 'Century Gothic';
-            font-size: 25px;
-            line-height: 50px;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            padding: 0px 25px;
-            position: relative;
-            text-shadow: 1px 1px 2px rgb(0, 0, 0);
-            cursor: pointer;
-        }
-    
-        .Link:after {
-            background: none repeat scroll 0 0 transparent;
-            bottom: 0;
-            content: '';
-            display: block;
-            height: 2px;
-            left: 50%;
-            position: absolute;
-            background: #fff;
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            width: 0;
-        }
-    
-        .Link:hover:after {
-            width: 70%;
-            left: 14%;
-            box-shadow: 1px 1px 2px rgb(0, 0, 0);
-        }
     }
 }

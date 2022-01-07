@@ -7,17 +7,18 @@ import Resume from './components/Resume/Resume';
 import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
 
+
 function App() {
-  return (
-    <div className='App'>
-      <Header />
-      <Home id='Home'/>
-      <About id='About'/>
-      <Resume id='Resume'/>
-      <Skills id='Skills'/>
-      <Contacts id='Contacts'/>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Header />
+            <Home id='Home'/>
+            <About id='About'/>
+            <Resume id='Resume'/>
+            <Skills id='Skills'/>
+            <Contacts id='Contacts'/>
+        </div>
+    );
 }
 
 export default App;

@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .Skills {
     display: flex;
     flex-direction: column;
@@ -12,10 +14,18 @@
     }
 
     .horizontal-line {
-        width: 1000px;
-        border: 5px solid rgba(255, 255, 255, 0.75);
-        border-radius: 10px;
+        width: 900px;
+        border: 2px solid rgba(255, 255, 255, 0.75);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-top: 200px;
+        margin-top: 100px;
+    }
+
+    @media only screen and (min-width : $mobile-min) and (max-width : $mobile-max) {
+        margin-top: 80px;
+
+        .horizontal-line {
+            width: 300px;
+            margin-top: 80px;
+        }
     }
 }
