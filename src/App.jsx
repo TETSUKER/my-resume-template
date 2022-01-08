@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.scss';
+import { withNamespaces } from 'react-i18next';
+
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -7,6 +8,7 @@ import Resume from './components/Resume/Resume';
 import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
 
+import './App.scss';
 
 function App() {
     return (
@@ -21,4 +23,4 @@ function App() {
     );
 }
 
-export default App;
+export default withNamespaces()(App);

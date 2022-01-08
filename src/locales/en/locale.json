@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "skills": "Skills",
+    "contacts": "Contacts"
+  },
+  "home": {
+    "name": "Roman Tokmin",
+    "info": "Web-developer, Novosibirsk",
+    "download": "Download resume"
+  },
+  "about": {
+    "title": "About me",
+    "name": "Name: Tokmin Roman",
+    "birthday": "Birthday: 22.01.1999",
+    "info": "I’m a beginner web-developer currently employed by Eltex, where I develop the interface of network hardware and also help it to communicate with hardware systems. I Began to learn programming in NSTU by making a laboratory using С/С++ and making a task manager for my diploma using HTML/JS. Also in my free time I write my own projects. Now I am learning React and Node JS, and I am very interested in these technologies. Like writing documentation for projects, also like pizza and video games!"
+  },
+  "resume": {
+    "title": "Resume",
+    "education": {
+      "title": "Novosibirsk State Technical University",
+      "logoTitle": "Education",
+      "rows": [
+        "Bachelor's degree, 2017-2021",
+        "Faculty: Automation and Computer Engineering",
+        "Direction: Management in technical systems",
+        "Profile: Automation and control"
+      ],
+      "info": "During the training, I worked with various Plis\\Arduino boards, also studied the basics of the linux system, which I liked the most and worked as a laboratory with various network equipment. I also studied JavaScript in parallel, which was useful for implementing my application for bachelor's work. Now I am continuing my master's degree in this direction."
+    },
+    "work": {
+      "title": "ENTERPRISE «ELTEX» —",
+      "logoTitle": "Work experience",
+      "rows": [
+        "company is one of the leading Russian manufacturers of telecommunications equipment.",
+        "February 2021 - Current time"
+      ],
+      "info": "My first job as a web developer, where the hardware frontend is written in Knockoutjs, requests to the system were made by Lua and a small layer of system code to make system calls. Here I fixed bugs, added functionality, and also transferred projects from Knockoutjs to Angular. I wrote a lot of documentation, which simplified the work of other developers, put old projects in order and raised new ones. I learned a lot of new things from my colleagues, which I am very grateful to them for!"
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "lang": "eng"
+}

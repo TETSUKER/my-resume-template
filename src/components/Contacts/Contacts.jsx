@@ -1,13 +1,18 @@
 import React from 'react';
-import './Contacts.scss';
+import { withNamespaces } from 'react-i18next';
+
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+
+import i18n from '../../i18n';
+
+import './Contacts.scss';
 
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant='filled' {...props} />;
 });
 
-const Contacts = () => {
+const Contacts = ({ t }) => {
     const data = {
         data: {
             phoneIcon: 'phone.png',
@@ -38,7 +43,7 @@ const Contacts = () => {
 
     return (
         <div className='Contacts'>
-            <div className='title-text'>Контакты</div>
+            <div className='title-text'>{t('contacts.title')}</div>
             <div className='Contacts-block'>
                 <div className='Contacts-block__left'>
                     <div className='Contacts-block__left-contact'>
@@ -68,4 +73,4 @@ const Contacts = () => {
     )
 }
 
-export default Contacts;
+export default withNamespaces()(Contacts);

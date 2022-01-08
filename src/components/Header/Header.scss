@@ -37,11 +37,26 @@
     box-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
+.langBtn {
+    max-width: 40px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.langBtn:hover {
+    transform: scale(1.1);
+}
+
 .Header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
 
     .Header__logo {
         display: flex;

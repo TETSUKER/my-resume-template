@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import './Header.scss';
 import PropTypes from 'prop-types';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link } from 'react-scroll';
+import { withNamespaces } from 'react-i18next';
+
+import {useScrollTrigger, Button} from '@mui/material';
 import {
     AppBar,
     Toolbar,
@@ -11,10 +12,14 @@ import {
     Drawer,
     IconButton,
     ListItem,
-    ListItemText
+    ListItemText,
+    StylesProvider
     } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import { StylesProvider } from '@material-ui/core';
+
+import i18n from '../../i18n';
+
+import './Header.scss';
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -34,16 +39,16 @@ ElevationScroll.propTypes = {
     window: PropTypes.func,
 };
 
-const Header = () => {
+const Header = ({ t }) => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const [openDrawer, setOpenDrawer] = useState(false);
     const links = [
-        {title: 'Главная', target: 'Home', offset: -250},
-        {title: 'Обо мне', target: 'About', offset: -90},
-        {title: 'Резюме', target: 'Resume', offset: -100},
-        {title: 'Навыки', target: 'Skills', offset: -90},
-        {title: 'Контакты', target: 'Contacts', offset: -150}
+        {title: t('header.home'), target: 'Home', offset: -250},
+        {title: t('header.about'), target: 'About', offset: -90},
+        {title: t('header.resume'), target: 'Resume', offset: -100},
+        {title: t('header.skills'), target: 'Skills', offset: -90},
+        {title: t('header.contacts'), target: 'Contacts', offset: -150}
     ]
 
     return (
@@ -52,7 +57,8 @@ const Header = () => {
                 <AppBar>
                     <Toolbar>
                         <div className='Header'>
-                            <div className='Header__logo'>&#60;/&#62;</div>
+                            <img src={require(`../../assets/images/${t('lang')}.png`)} className="langBtn"
+                                onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en')} />
                             {isMobile ? (
                                 <>
                                     <Drawer
@@ -108,4 +114,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default withNamespaces()(Header);

@@ -1,38 +1,28 @@
 import React from 'react';
-import './About.scss';
+import { withNamespaces } from 'react-i18next';
+
 import Container from '@mui/material/Container';
 
-const About = () => {
+import i18n from '../../i18n';
+
+import './About.scss';
+
+const About = ({ t }) => {
     return (
         <Container className='About'>
-            <div className='title-text'>Обо мне</div>
+            <div className='title-text'>{t('about.title')}</div>
             <div className='About__bio'>
                 <div className='card About__bio-photo-block'>
                     <img src={require('../../assets/images/avatar.jpg')} className='photo' alt='avatar' />
                     <div className='About__bio-photo-block__bottom'>
-                        <div className='name'>Имя: Токмин Роман</div>
-                        <div className='birthday'>Дата рождения: 22.01.1999</div>
+                        <div className='name'>{t('about.name')}</div>
+                        <div className='birthday'>{t('about.birthday')}</div>
                     </div>
                 </div>
-                <div className='minor-text'>
-                    Я начинающий веб-разработчик, 
-                    в настоящее время работаю в Eltex, 
-                    где разрабатываю интерфейс для сетевого оборудования, 
-                    а также помогаю ему 
-                    общаться с системой оборудования. 
-                    Начал изучать программирование еще в НГТУ, 
-                    выполняя различные лабораторные на C/C++ 
-                    и реализовывая свой менеджер задач 
-                    в качестве диплома на HTML/JS. Также 
-                    в свободное время пишу свои проекты, 
-                    сейчас изучаю React и Node JS, 
-                    очень интересны эти технологии. 
-                    Люблю писать документацию для проектов, 
-                    а также пиццу и видеоигры!
-                </div>
+                <div className='minor-text'>{t('about.info')}</div>
             </div>
         </Container>
     )
 }
 
-export default About;
+export default withNamespaces()(About);

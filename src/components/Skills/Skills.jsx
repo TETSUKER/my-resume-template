@@ -1,11 +1,15 @@
 import React from 'react';
-import './Skills.scss';
-import SkillCard from './SkillCard/SkillCard';
+import { withNamespaces } from 'react-i18next';
 
-const Skills = () => {
+import SkillCard from './SkillCard/SkillCard';
+import i18n from '../../i18n';
+
+import './Skills.scss';
+
+const Skills = ({ t }) => {
     return (
         <div className='Skills'>
-            <div className='title-text'>Навыки</div>
+            <div className='title-text'>{t('skills.title')}</div>
             <div className='SkillCards'>
                 <SkillCard data={{
                     image: 'html5.png',
@@ -45,4 +49,4 @@ const Skills = () => {
     )
 }
 
-export default Skills;
+export default withNamespaces()(Skills);

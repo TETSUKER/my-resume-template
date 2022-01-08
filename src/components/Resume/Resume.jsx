@@ -1,42 +1,41 @@
 import React from 'react';
-import './Resume.scss';
-import Card from './Card/Card';
+import { withNamespaces } from 'react-i18next';
+
 import Container from '@mui/material/Container';
 
-const Resume = () => {
+import Card from './Card/Card';
+import i18n from '../../i18n';
+
+import './Resume.scss';
+
+const Resume = ({ t }) => {
     return (
         <Container className='Resume'>
-            <div className='title-text'>Резюме</div>
+            <div className='title-text'>{t('resume.title')}</div>
             <Card data={{
-                title: 'Новосибирский Государственный Технический Университет',
+                title: t('resume.education.title'),
                 rows: [
-                    'Бакалавриат, 2017-2021',
-                    'Факультет: Автоматики и вычислительной техники',
-                    'Направление: Управление в технических системах',
-                    'Профиль: Автоматика и управление'
+                    t('resume.education.rows.0'),
+                    t('resume.education.rows.1'),
+                    t('resume.education.rows.2'),
+                    t('resume.education.rows.3')
                 ],
                 logo: 'building.png',
-                logoTitle: 'Образование'
+                logoTitle: t('resume.education.logoTitle')
             }}/>
-            <div className='Resume__about minor-text'>
-            Во время обучения работал с различными платами Плис\Arduino, также изучал основы системы linux, что мне понравилось больше всего и работал в качестве лабораторных работ с различным сетевым оборудованием. Также, параллельно изучал JavaScript, который пригодился для реализации моего приложения для бакалаврской работы. Сейчас продолжаю обучение на магистратуре этого направления.
-            </div>
+            <div className='Resume__about minor-text'>{t('resume.education.info')}</div>
             <Card data={{
-                title: 'ООО «Предприятие «Элтекс» (ELTEX) —',
+                title: t('resume.work.title'),
                 rows: [
-                    'один из ведущих российских разработчиков и производителей сетевого оборудования.',
-                    'Февраль 2021 - Текущее время'
+                    t('resume.work.rows.0'),
+                    t('resume.work.rows.1')
                 ],
                 logo: 'bag.png',
-                logoTitle: 'Опыт работы'
+                logoTitle: t('resume.work.logoTitle')
             }}/>
-            <div className='Resume__about minor-text'>
-                Мое первое место работы в качестве web-разработчика, где фронтенд оборудования написан на KnockautJS, запросы к системе выполнял Lua 
-                и небольшая прослойка Си-шного кода для выполнения системных вызовов. Здесь я правил баги, дописывал функционал, а также переносил проекты 
-                с KnockautJS на Angular. Писал много документации, чем упростил работу другим разработчикам, приводил в порядок старые проекты и поднимал новые. Очень много нового узнал от своих коллег, чем очень благодарен им!
-            </div>
+            <div className='Resume__about minor-text'>{t('resume.work.info')}</div>
         </Container>
     )
 }
 
-export default Resume;
+export default withNamespaces()(Resume);
